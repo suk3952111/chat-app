@@ -45,7 +45,6 @@ Make sure you have the following installed:
 3. Create a `.env` file in the root directory and add your Supabase credentials
    ```env
    VITE_SUPABASE_URL=your_supabase_url
-   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
    ```
 
 ### Usage
@@ -56,24 +55,11 @@ Make sure you have the following installed:
    ```
 2. Open your browser and go to [http://localhost:3000](http://localhost:3000) to see the app in action.
 
-## Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
+June Seok Woo - suk3952111@naver.com
 
-Project Link: [https://github.com/your_username_/your_repo_name](https://github.com/your_username_/your_repo_name)
+Project Link: [https://github.com/suk3952111/chat-app](https://github.com/suk3952111/chat-app)
 
 ---
