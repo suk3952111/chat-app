@@ -36,7 +36,7 @@ Make sure you have the following installed:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/your_repo_name.git
+   git clone https://github.com/suk3952111/chat-app.git
    ```
 2. Install NPM packages
    ```sh
@@ -44,7 +44,7 @@ Make sure you have the following installed:
    ```
 3. Create a `.env` file in the root directory and add your Supabase credentials
    ```env
-   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_KEY=your_supabase_key
    ```
 
 ### Usage
