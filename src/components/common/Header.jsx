@@ -30,7 +30,7 @@ const Header = () => {
       const profile = await fetchUserProfile(user.id);
       setProfileData(profile);
     } catch (error) {
-      console.error("프로필 정보를 가져오는 중 오류 발생:", error.message);
+      throw new Error(`프로필 정보를 가져오는 중 오류 발생: ${error.message}`);
     }
   };
 
@@ -48,9 +48,8 @@ const Header = () => {
             },
           ]);
         } catch (error) {
-          console.error(
-            "발신자 프로필 정보를 가져오는 중 오류 발생:",
-            error.message
+          throw new Error(
+            `발신자 프로필 정보를 가져오는 중 오류 발생: ${error.message}`
           );
         }
       }
@@ -77,13 +76,13 @@ const Header = () => {
       const { error } = await supabase.auth.signOut();
 
       if (error) {
-        alert("로그아웃 중 오류 발생:", error.message);
+        alert(`로그아웃 중 오류 발생: ${error.message}`);
       } else {
         setUser(null);
         navigate("/login");
       }
     } catch (error) {
-      alert("로그아웃 중 오류 발생:", error.message);
+      alert(`로그아웃 중 오류 발생: ${error.message}`);
     }
   };
 
@@ -94,8 +93,6 @@ const Header = () => {
       prevNotifications.filter((n) => n.sender_id !== sender_id)
     );
   };
-
-  console.log(notifications);
 
   return (
     <header className={styles.header}>

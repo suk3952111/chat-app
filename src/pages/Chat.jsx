@@ -17,8 +17,16 @@ const Chat = () => {
   useEffect(() => {
     if (user) {
       fetchMessages();
-      fetchUserProfile(userId).then(setProfile).catch(console.error);
-      fetchUserProfile(user.id).then(setMyProfile).catch(console.error);
+      fetchUserProfile(userId)
+        .then(setProfile)
+        .catch((error) => {
+          throw error;
+        });
+      fetchUserProfile(user.id)
+        .then(setMyProfile)
+        .catch((error) => {
+          throw error;
+        });
 
       const handleInserts = (payload) => {
         setMessages((prevMessages) => [...prevMessages, payload.new]);
@@ -56,7 +64,9 @@ const Chat = () => {
       .order("created_at", { ascending: true });
 
     if (error) {
-      console.error("메시지를 불러오는 중 오류가 발생했습니다:", error);
+      throw new Error(
+        `메시지를 불러오는 중 오류가 발생했습니다: ${error.message}`
+      );
     } else {
       setMessages(messages);
     }
@@ -70,7 +80,9 @@ const Chat = () => {
           { sender_id: user.id, receiver_id: userId, message: newMessage },
         ]);
       if (error) {
-        console.error("메시지를 보내는 중 오류가 발생했습니다:", error);
+        throw new Error(
+          `메시지를 보내는 중 오류가 발생했습니다: ${error.message}`
+        );
       } else {
         setNewMessage("");
       }

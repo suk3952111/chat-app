@@ -13,29 +13,25 @@ const UserList = () => {
     if (user) {
       fetchProfiles();
     } else {
-      setLoading(false); // user가 없으면 로딩을 중지합니다.
+      setLoading(false);
     }
   }, [user]);
 
   const fetchProfiles = async () => {
-    console.log("fetchProfiles called");
     let { data: profiles, error } = await supabase.from("profiles").select("*");
 
     if (error) {
-      console.error("프로필을 불러오는 중 오류가 발생했습니다:", error);
+      throw new Error(`프로필을 불러오는 중 오류가 발생했습니다: ${error}`);
     } else {
-      console.log("Profiles fetched:", profiles);
       setUsers(profiles);
     }
     setLoading(false);
   };
 
-  console.log("loading state:", loading);
   if (loading) {
     return <div>로딩 중...</div>;
   }
 
-  console.log("user state:", user);
   if (!user) {
     return <div>로그인이 필요합니다.</div>;
   }

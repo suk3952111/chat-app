@@ -58,7 +58,6 @@ const Signup = () => {
           setSignupError(`URL Retrieval Error: ${urlError.message}`);
           return;
         }
-        console.log(publicData);
         profileUrl = publicData.publicUrl;
       }
 
