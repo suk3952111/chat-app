@@ -1,0 +1,129 @@
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profileHeader {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #343a40;
+  color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.profileHeader h2 {
+  color: #ffffff;
+  margin: 0;
+}
+
+.profileImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 120px;
+}
+
+.messagesContainer {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  max-width: 60%;
+}
+
+.myMessage {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.theirMessage {
+  align-self: flex-start;
+}
+
+.messageProfileImage {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.messageContent {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #e9ecef;
+  word-wrap: break-word;
+}
+
+.myMessage .messageContent {
+  background-color: #007bff;
+  color: white;
+}
+
+.messageTime {
+  display: flex;
+  font-size: 0.8em;
+  color: #6c757d;
+  margin-top: 5px;
+}
+
+.myMessage .messageTime {
+  display: flex;
+  justify-content: end;
+}
+
+.theirMessage .messageTime {
+  display: flex;
+  justify-content: start;
+}
+
+.inputContainer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.messageInput {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.sendButton {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  background-color: #0056b3;
+}
+
+.noMessages {
+  text-align: center;
+  color: #6c757d;
+  margin-top: 20px;
+}
