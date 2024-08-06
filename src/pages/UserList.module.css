@@ -1,0 +1,44 @@
+.userList {
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.userList h2 {
+  text-align: center;
+  color: #333;
+}
+
+.userList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.userItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.userLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.userImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.userItem:hover {
+  background-color: #e9ecef;
+}

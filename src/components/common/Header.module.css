@@ -1,0 +1,116 @@
+.header {
+  display: flex;
+  height: 60px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font: inherit;
+}
+
+.navigator {
+  width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigatorComponents {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.navigatorComponents li {
+  display: flex;
+  align-items: center;
+}
+
+.logoutButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logoutButton:hover {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.navigatorComponents li a {
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.navigatorComponents li a:hover {
+  text-decoration: underline;
+}
+
+.activeLink {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.notificationContainer {
+  position: relative;
+}
+
+.notificationButton {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.notificationButton:hover {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.notificationBadge {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: 12px;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+}
+
+.notificationDropdown {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: white;
+  color: black;
+  list-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.notificationDropdown li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.notificationDropdown li:hover {
+  background-color: #f1f1f1;
+}
