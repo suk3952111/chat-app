@@ -14,6 +14,7 @@ This is a simple chat application project built using React, Vite, and Supabase.
 - [License](#license)
 
 ## Features
+![screencapture-localhost-5173-chat-db373776-ad8d-4382-a948-6cad138f3051-2024-08-20-18_12_10](https://github.com/user-attachments/assets/cc8d4c54-671c-4dd0-80d1-440912d0dc7d)
 
 - Real-time messaging
 - User authentication and authorization
