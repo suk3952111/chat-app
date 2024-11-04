@@ -33,7 +33,7 @@ const UserList = () => {
   }
 
   if (!user) {
-    return <div>로그인이 필요합니다.</div>;
+    return <div className={styles.loginMessage}>로그인이 필요합니다.</div>;
   }
 
   return (

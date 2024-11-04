@@ -42,3 +42,20 @@
 .userItem:hover {
   background-color: #e9ecef;
 }
+
+.loginMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  margin: 50px auto;
+}
