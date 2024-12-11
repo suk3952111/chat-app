@@ -2,7 +2,7 @@
 
 # My Primitive Chat-App Project with React + Vite + Supabase
 
-This is a simple chat application project built using React, Vite, and Supabase. The primary goal of this project is to demonstrate how to create a basic real-time chat application with these technologies.
+> This is a simple chat application project built using React, Vite, and Supabase. The primary goal of this project is to demonstrate how to create a basic real-time chat application with these technologies.
 
 ## Table of Contents
 
